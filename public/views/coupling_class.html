@@ -1,0 +1,235 @@
+<div class="container" ng-controller="qualityController">
+<div class="col-lg-12">
+<div class="panel panel-info" style="background-color:lavender;"> <div class="panel-body"> 
+    <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      Step - 3
+    </div>
+  </div></div></div></div>
+<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Complexity Evaluation of communications between methods,classes and system
+        </div>
+        <div class="panel-body">
+        <div class="row">
+       
+    </div>
+    <div  class="col-md-2"></div>
+    <table class="table table-hover">
+            <thead>
+            <tr><center><h4>Package Name : Reasearch</h4><center></tr>
+            <tr>
+                <th style="text-align: center">Class Name</th>
+                <th style="text-align: center">Mathod Name</th>
+                <th style="text-align: center">Executable Statement</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Fan Out</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Coupling type</th>
+            </tr>
+            <tr>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Method</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Variable</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+               
+                
+            </tr>
+            <tr>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Call to a regular method in the same class(internal messaging)</th>
+                <th style="text-align: center">Call to a regular method in a different class(external messaging)</th>
+                <th style="text-align: center">Call to a recursive method in the same class(internal messaging)</th>
+                <th style="text-align: center">Call to a recursive method in a different class(external messaging)</th>
+                <th style="text-align: center">Referencing a data member of the same class</th>
+                <th style="text-align: center">Referencing a data member of a different class</th>
+                <th style="text-align: center"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">getDesignation</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center"></td>   
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">setDesignation</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center"></td>     
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">getCollegeName</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center"></td>     
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">4</td>
+                <td style="text-align: center">setCollegeName</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">1</td> 
+                <td style="text-align: center"></td>    
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">5</td>
+                <td style="text-align: center">does</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center"></td>     
+            </tr>
+           
+            </tbody>
+        </table>
+<div  class="col-md-2"></div>
+    <table class="table table-hover">
+            <thead>
+            <tr>
+                <th style="text-align: center">Class Name</th>
+                <th style="text-align: center">Mathod Name</th>
+                <th style="text-align: center">Executable Statement</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Fan In</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Coupling type</th>
+            </tr>
+            <tr>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Method</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Variable</th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+               
+            </tr>
+            <tr>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center"></th>
+                <th style="text-align: center">Calling from another method in the same class</th>
+                <th style="text-align: center">Calling from another method in a different class</th>
+                <th style="text-align: center">A method in a different class referencing a data member in the current class</th>
+                <th style="text-align: center">Abstract data types</th>
+                <th style="text-align: center"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">getDesignation</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center"></td>
+                
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">setDesignation</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center"></td>
+                   
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">getCollegeName</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center"></td>
+                  
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">4</td>
+                <td style="text-align: center">setCollegeName</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center"></td>
+                 
+            </tr>
+            <tr>
+                <td style="text-align: center">Teacher</td>
+                <td style="text-align: center">5</td>
+                <td style="text-align: center">does</td>
+                <td style="text-align: center">3</td>
+                <td style="text-align: center">2</td>
+                <td style="text-align: center">1</td>
+                <td style="text-align: center">0</td>
+                <td style="text-align: center"></td>
+                
+            </tr>
+           
+            </tbody>
+        </table>
+
+
+        <div class="col-lg-12">&nbsp;</div>
+        <div class="col-lg-12">
+
+             <button class="btn btn-info btn-sm pull-right"><b><a style="color:white;" ng-href="#/qualitys/{{sourcecode._id}}/inheritance/class">NEXT >></a></b></button> 
+             <button class="btn btn-warning btn-sm pull-right"><b><a style="color:white;" ng-href="#/sourcecodes"><< BACK</a></b></button>
+        </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+

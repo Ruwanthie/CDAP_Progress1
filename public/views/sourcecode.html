@@ -1,0 +1,100 @@
+<div class="container" ng-controller="sourcecodeController">
+<div class="col-lg-12">
+<div class="panel panel-info" style="background-color:lavender;"> <div class="panel-body"> 
+    <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+      Step - 1
+    </div>
+  </div></div></div></div>
+<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Upload Source Code
+        </div>
+        <div class="panel-body">
+        <div class="row">
+       
+    </div>
+    <div  class="col-md-2"></div>
+    <div class="col-md-10">
+        <br/>
+        
+        <label for="developer" class="col-sm-4 control-label">User ID of Developer : </label>
+        <div class="col-sm-6">
+            <select  ng-model="sourcecode.developer" class="form-control" id="developer" placeholder="Select User ID">
+               <option value="U1000">U1000</option>
+               <option value="U1001">U1001</option>
+               <option value="U1002">U1002</option> 
+               <option value="U1003">U1003</option>
+               <option value="U1004">U1004</option>
+               <option value="U1005">U1005</option> 
+               <option value="U1006">U1006</option>
+               <option value="U1007">U1007</option>
+               <option value="U1008">U1008</option>
+               <option value="U1009">U1009</option>
+               <option value="U1010">U1010</option>          
+           </select>&nbsp;
+        </div>
+
+        <label for="project" class="col-sm-4 control-label">Project Name :</label>
+        <div class="col-sm-6">
+            <input type="text" ng-model="sourcecode.project" class="form-control" id="project" >&nbsp;
+        </div>
+
+        <label for="javacode" class="col-sm-4 control-label">Source Code</label>
+        <div class="col-sm-6">
+            <input type="file" class="form-control" ng-model="sourcecode.javacode" id="javacode">&nbsp;
+        </div> 
+
+        <div class="form-group">
+            <label for="remarks" class="col-sm-4 control-label">Remarks</label>
+            <div class="col-sm-6">
+                <textarea id="remarks" ng-model="sourcecode.remarks"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+        </div>
+        <div  class="col-md-2"></div>
+        <div class="col-md-10">
+            <button class="btn btn-primary pull-right" ng-click="addSourcecode(sourcecode)">Save</button>
+        </div>
+        <br/>
+    </div>
+</div>
+
+</div>
+
+</div>
+<div class="col-lg-12">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Uploaded Source Code Information
+        </div>
+        <div class="panel-body">
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th style="text-align: center">Uploaded Date</th>
+                <th style="text-align: center">Developer</th>
+                <th style="text-align: center">Project</th>
+                <th style="">Remarks</th>
+                <th style="text-align: center"></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="sourcecode in sourcecodes">
+                <td style="text-align: center">{{sourcecode.uploadedDate | date: "dd.MM.y"}}</td>
+                <td style="text-align: center">{{sourcecode.developer}}</td>
+                <td style="text-align: center">{{sourcecode.project}}</td>
+                <td style="">{{sourcecode.remarks}}</td>
+                <td style="text-align: center"> <button class="btn btn-default btn-sm pull-right"><a ng-href="#/qualitys/{{sourcecode._id}}">Open</a></button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+

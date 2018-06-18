@@ -1,0 +1,75 @@
+<div class="container" ng-controller="userfeedbackController">
+<div class="col-lg-12">
+<div class="panel panel-info" style="background-color:lavender;"> <div class="panel-body"> 
+    <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      Step - 4
+    </div>
+  </div></div></div></div>
+<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            User Feedback
+        </div>
+        <div class="panel-body">
+        <div class="row">
+       
+    </div>
+        <label for="understanding" class="col-sm-5 control-label">1. Issue/ requirement/ customer understanding : </label>
+        <div class="col-sm-6">
+                <textarea id="understanding" ng-model="userfeedback.understanding"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+
+        <label for="reporting" class="col-sm-5 control-label">2. Transperancy, updating, status reporting :</label>
+        <div class="col-sm-6">
+                <textarea id="reporting" ng-model="userfeedback.reporting"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+
+        <label for="upgrades" class="col-sm-5 control-label">3. Product performance improvements & upgrades : </label>
+        <div class="col-sm-6">
+                <textarea id="upgrades" ng-model="userfeedback.upgrades"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+
+        <label for="control" class="col-sm-5 control-label">4. Documentation & quality control : </label>
+        <div class="col-sm-6">
+                <textarea id="control" ng-model="userfeedback.control"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+
+        <label for="adherence" class="col-sm-5 control-label">5. Process adherence : </label>
+        <div class="col-sm-6">
+                <textarea id="adherence" ng-model="userfeedback.adherence"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+
+        <label for="initiatives" class="col-sm-5 control-label">6. New projects/ Initiatives : </label>
+        <div class="col-sm-6">
+                <textarea id="initiatives" ng-model="userfeedback.initiatives"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+        <label for="technologies" class="col-sm-5 control-label">7. New technologies : </label>
+        <div class="col-sm-6">
+                <textarea id="technologies" ng-model="userfeedback.technologies"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+        <label for="contribution" class="col-sm-5 control-label">8. Code contribution : </label>
+        <div class="col-sm-6">
+                <textarea id="contribution" ng-model="userfeedback.contribution"  class="form-control" rows="3"></textarea>&nbsp;
+            </div>
+      
+        <div  class="col-md-3"></div>
+        <div class="col-md-8">
+            <button class="btn btn-primary pull-right" ng-click="addUserfeedback(userfeedback)">Save</button>
+        </div>
+        <br/>
+        <div class="col-lg-12">&nbsp;</div>
+        <div class="col-lg-12">
+
+             <button class="btn btn-info btn-sm pull-right"><b><a style="color:white;" ng-href="#/behaviour">NEXT >></a></b></button> 
+             <button class="btn btn-warning btn-sm pull-right"><b><a style="color:white;" ng-href="#/sourcecodes"><< BACK</a></b></button>
+        </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+

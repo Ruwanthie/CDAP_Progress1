@@ -1,0 +1,52 @@
+<div class="container" ng-controller="userController">
+    <br>
+    <br>
+    <div class="col-lg-offset-1 col-lg-10">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                User Registration
+            </div>
+            <div class="panel-body">
+                <div class="col-lg-offset-3 col-lg-6 ">
+                <form class="form-horizontal" name="userForm" ng-submit="addUser(user)" novalidate>
+                    <div class="form-group">
+                        <label for="pname" class="control-label" >Name :</label>
+                        <input type="text" id="pname" name="pname" class="form-control" placeholder="Enter Name" ng-model="user.name" ng-required="true">
+                        <span class="help-block" ng-show="userForm.pname.$dirty && (userForm.pname.$invalid || userForm.pname.$error.required)"> Please enter Name </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="paddress" class="control-label" >Address :</label>
+                        <textarea rows="3" cols="50" type="text" id="paddress" name="paddress" class="form-control" placeholder="Enter Address" ng-model="user.address" ng-required="true"></textarea>
+                        <span class="help-block" ng-show="userForm.paddress.$dirty && (userForm.paddress.$invalid || userForm.paddress.$error.required)"> Please enter Address </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="pphone" class="control-label" >Phone Number :</label>
+                        <input type="text" id="pphone" name="pphone" class="form-control" placeholder="Enter Phone Number" ng-model="user.phone_number" ng-required="true">
+                        <span class="help-block" ng-show="userForm.pphone.$dirty && (userForm.pphone.$invalid || userForm.pphone.$error.required)"> Please enter Phone Number </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="pgender" class="control-label" >Gender :</label>
+                        <select class="form-control" id="pgender" name="pgender" ng-model="user.gender" ng-required="true">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pnic" class="control-label" >Username :</label>
+                        <input type="text" id="pnic" name="pnic" class="form-control" placeholder="Enter Username" ng-model="user.nic" ng-required="true">
+                        <span class="help-block" ng-show="userForm.pnic.$dirty && (userForm.pnic.$invalid || userForm.pnic.$error.required)"> Please enter Username </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ppassword" class="control-label" >Password :</label>
+                        <input type="password" id="ppassword" name="ppassword" class="form-control" placeholder="Enter Password" ng-model="user.password" ng-required="true">
+                        <span class="help-block" ng-show="userForm.ppassword.$dirty && (userForm.ppassword.$invalid || userForm.ppassword.$error.required)"> Please enter password </span>
+                    </div>
+                    <br>
+                    <button type="submit" class="col-lg-offset-5 btn btn-lg btn-success" ng-disabled="userForm.$invalid">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

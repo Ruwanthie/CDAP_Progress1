@@ -1,0 +1,24 @@
+{
+  "name": "CDAP",
+  "version": "1.0.0",
+  "description": "CDAP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.3",
+    "mongoose-sequence-plugin": "^1.0.5",
+    "simple-mongoose-autoincrement": "^1.2.1",
+    "ng-file-upload": "^10.1.9"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.3",
+    "supertest": "^3.0.0"
+  }
+}
